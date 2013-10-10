@@ -10,6 +10,8 @@ package com.zhengwenhui.toiletpaper;
 public final class R {
     public static final class anim {
         public static final int tp1=0x7f040000;
+        public static final int tp2=0x7f040001;
+        public static final int tp3=0x7f040002;
     }
     public static final class attr {
     }
@@ -48,6 +50,7 @@ public final class R {
         public static final int toiletpaper20=0x7f020015;
         public static final int toiletpaper21=0x7f020016;
         public static final int toiletpaper22=0x7f020017;
+        public static final int toiletpaper23=0x7f020018;
     }
     public static final class id {
         public static final int action_settings=0x7f090001;

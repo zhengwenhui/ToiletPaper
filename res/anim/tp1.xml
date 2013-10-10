@@ -7,4 +7,6 @@
     <item android:drawable="@drawable/toiletpaper03" android:duration="300"/>
     <item android:drawable="@drawable/toiletpaper04" android:duration="300"/>
     <item android:drawable="@drawable/toiletpaper05" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper06" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper07" android:duration="300"/>
 </animation-list>

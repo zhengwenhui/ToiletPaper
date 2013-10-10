@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/toiletpaper16" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper17" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper18" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper19" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper20" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper21" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper22" android:duration="300"/>
+    <item android:drawable="@drawable/toiletpaper23" android:duration="300"/>
+</animation-list>

@@ -10,12 +10,19 @@ public class MainActivity extends Activity {
 
 	private ImageButton mImageButton;
 	private AnimationDrawable mAnimationDrawable;
+	private int[] mAnimResId={
+			R.anim.tp1,
+			R.anim.tp2,
+			R.anim.tp3,
+	};
+	private int index =0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mImageButton = (ImageButton)findViewById(R.id.frame_image);
+		onClickButton(mImageButton);
 	}
 
 	/*@Override
@@ -26,13 +33,15 @@ public class MainActivity extends Activity {
 	}*/
 
 	public void onClickButton(View view){
-		//mImageButton.setBackgroundResource(R.anim.tp1);
-		mImageButton.setImageResource(R.anim.tp1);
+		mImageButton.setImageResource(mAnimResId[index++]);
 		mAnimationDrawable = (AnimationDrawable) mImageButton.getDrawable();  
-		mAnimationDrawable.start();
 		if(mAnimationDrawable.isRunning()){
 			mAnimationDrawable.stop();
-			mAnimationDrawable.start();
+		}
+		mAnimationDrawable.start();
+		
+		if(index>=mAnimResId.length){
+			index = 0;
 		}
 	}
 }
