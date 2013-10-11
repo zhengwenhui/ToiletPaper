@@ -2,6 +2,8 @@ package com.zhengwenhui.toiletpaper;
 
 import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -19,11 +21,16 @@ public class MainActivity extends Activity {
 	private int index =0;
 	private Handler finishHandler;
 	private boolean mRunAnim = false;
-
+	private SoundPool pool;
+	private int sourceid;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		pool = new SoundPool(1, AudioManager.STREAM_SYSTEM, 0);
+		sourceid = pool.load(this, R.raw.shizhi, 0);
+
 		mImageButton = (ImageButton)findViewById(R.id.frame_image);
 		onClickButton(mImageButton);
 	}
@@ -46,6 +53,7 @@ public class MainActivity extends Activity {
 			mAnimationDrawable.stop();
 		}
 		mAnimationDrawable.start();
+		pool.play(sourceid, 1, 1, 0, 0, 1);
 		mRunAnim = true;
 		finishHandler = new Handler();
 		finishHandler.postDelayed(
