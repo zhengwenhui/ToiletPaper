@@ -8,7 +8,17 @@
         android:id="@+id/frame_image"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
         android:onClick="onClickButton" />
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
 
 </RelativeLayout>
