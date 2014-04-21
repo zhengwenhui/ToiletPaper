@@ -5,7 +5,7 @@
     tools:context=".MainActivity" >
 
     <ImageButton
-        android:id="@+id/frame_image"
+        android:id="@+id/base_image"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@android:color/transparent"
